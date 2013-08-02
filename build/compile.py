@@ -49,6 +49,7 @@ if __name__ == '__main__':
 
     file('./addon.xml', 'w').write('<?xml version="1.0" encoding="UTF-8" standalone="yes"?>' + XML.encode('utf8'))
     z = zipfile.ZipFile('./repository.hal9000.zip', 'w')
+    z.write('./icon.jpg', 'repository.hal9000/icon.jpg')
     z.write('./addon.xml', 'repository.hal9000/addon.xml')
     z.close()
     os.unlink('./addon.xml')
