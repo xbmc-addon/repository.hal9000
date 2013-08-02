@@ -48,5 +48,5 @@ if __name__ == '__main__':
     file('./addons.xml.md5', 'w').write( hashlib.md5(file('./addons.xml', 'rb').read()).hexdigest() )
 
     z = zipfile.ZipFile('./repository.hal9000.zip', 'w')
-    z.write('./addons.xml')
+    z.write('./addons.xml', 'repository.hal9000/addons.xml')
     z.close()
