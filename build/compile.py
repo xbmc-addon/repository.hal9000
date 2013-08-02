@@ -14,7 +14,7 @@ XML = u"""
         <datadir zip="true">https://github.com/xbmc-addon/repository.hal9000/raw/master/repo</datadir>
     </extension>
     <extension point="xbmc.addon.metadata">
-        <summary lang="en">Install HAL9000's Addons</summary>
+        <summary lang="en">Install HAL9000&apos;s Addons</summary>
         <description lang="en">Download and install addons by HAL9000</description>
         <summary lang="ru">Репо HAL9000</summary>
         <description lang="ru">Скачивание и установка плагинов от HAL9000</description>
@@ -47,6 +47,8 @@ if __name__ == '__main__':
     file('./addons.xml', 'w').write('\n'.join(addons))
     file('./addons.xml.md5', 'w').write( hashlib.md5(file('./addons.xml', 'rb').read()).hexdigest() )
 
+    file('./addon.xml', 'w').write('<?xml version="1.0" encoding="UTF-8" standalone="yes"?>' + XML.encode('utf8'))
     z = zipfile.ZipFile('./repository.hal9000.zip', 'w')
-    z.write('./addons.xml', 'repository.hal9000/addons.xml')
+    z.write('./addon.xml', 'repository.hal9000/addon.xml')
     z.close()
+    os.unlink('./addon.xml')
