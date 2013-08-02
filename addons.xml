@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <addons>
-<addon id="plugin.rutracker" name="RuTracker" version="0.12.2" provider-name="HAL9000">
+<addon id="plugin.rutracker" name="RuTracker" version="0.12.1" provider-name="HAL9000">
   <requires>
     <import addon="xbmc.python" version="2.0"/>
   </requires>
@@ -21,8 +21,10 @@
         <datadir zip="true">https://github.com/xbmc-addon/repository.hal9000/raw/master/repo</datadir>
     </extension>
     <extension point="xbmc.addon.metadata">
-        <summary>Install HAL9000 Addons</summary>
-        <description>Download and install addons by HAL9000</description>
+        <summary lang="en">Install HAL9000 Addons</summary>
+        <description lang="en">Download and install addons by HAL9000</description>
+        <summary lang="ru">Репозиторий HAL9000</summary>
+        <description lang="ru">Скачивание и установка плагинов от HAL9000</description>
         <platform>all</platform>
     </extension>
 </addon>

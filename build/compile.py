@@ -14,8 +14,10 @@ XML = u"""
         <datadir zip="true">https://github.com/xbmc-addon/repository.hal9000/raw/master/repo</datadir>
     </extension>
     <extension point="xbmc.addon.metadata">
-        <summary>Install HAL9000 Addons</summary>
-        <description>Download and install addons by HAL9000</description>
+        <summary lang="en">Install HAL9000 Addons</summary>
+        <description lang="en">Download and install addons by HAL9000</description>
+        <summary lang="ru">Репозиторий HAL9000</summary>
+        <description lang="ru">Скачивание и установка плагинов от HAL9000</description>
         <platform>all</platform>
     </extension>
 </addon>
