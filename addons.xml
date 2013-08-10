@@ -13,6 +13,21 @@
     <platform>all</platform>
   </extension>
 </addon>
+<addon id="plugin.video.visionette" name="Visionette" version="0.0.1" provider-name="HAL9000">
+  <requires>
+    <import addon="xbmc.python" version="2.0"/>
+    <import addon="script.module.xbmcup" version="0.0.1"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" provides="video" library="default.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.service" library="service.py" start="login"/>
+  <extension point="xbmc.addon.metadata">
+    <summary>Visionette TV</summary>
+    <description>Навигатор по видео-архивам лучших русскоязычных СМИ.</description>
+    <platform>all</platform>
+  </extension>
+</addon>
 <addon id="script.module.xbmcup" name="XbmcUp" version="0.0.1" provider-name="HAL9000">
     <requires>
         <import addon="xbmc.python" version="2.0"/>
