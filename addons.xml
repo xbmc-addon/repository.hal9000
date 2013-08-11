@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <addons>
-<addon id="plugin.rutracker" name="RuTracker" version="0.12.2" provider-name="HAL9000">
+<addon id="plugin.rutracker" name="RuTracker" version="0.13.0" provider-name="HAL9000">
   <requires>
     <import addon="xbmc.python" version="2.0"/>
   </requires>
@@ -8,8 +8,10 @@
     <provides>video</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
-    <summary>Навигатор по RuTracker</summary>
-    <description>Навигатор по сайту KinoPoisk и RuTracker с возможностью скачивания торрентов.</description>
+    <summary lang="en">RuTracker + KinoPoisk</summary>
+    <description lang="en">You can search KinoPoisk and RuTracker and download torrents.</description>
+    <summary lang="ru">Навигатор по RuTracker</summary>
+    <description lang="ru">Навигатор по сайту KinoPoisk и RuTracker с возможностью скачивания торрентов.</description>
     <platform>all</platform>
   </extension>
 </addon>
