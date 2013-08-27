@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <addons>
-<addon id="plugin.audio.lastvk" name="Last.VK" version="0.0.3" provider-name="HAL9000">
+<addon id="plugin.audio.lastvk" name="Last.VK" version="0.0.4" provider-name="HAL9000">
   <requires>
     <import addon="xbmc.python" version="2.0"/>
-    <import addon="script.module.xbmcup" version="0.0.3"/>
+    <import addon="script.module.xbmcup" version="0.0.4"/>
   </requires>
   <extension point="xbmc.python.pluginsource" provides="audio" library="default.py">
     <provides>audio</provides>
   </extension>
+  <extension point="xbmc.service" library="service.py" start="login"/>
   <extension point="xbmc.addon.metadata">
     <summary>LastFM + VK.com</summary>
     <description>Навигатор по сайту LastFM с возможностью прослушивания музыки в VK.com</description>
