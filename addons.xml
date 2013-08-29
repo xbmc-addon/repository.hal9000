@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <addons>
-<addon id="plugin.audio.lastvk" name="Last.VK" version="0.0.8" provider-name="HAL9000">
+<addon id="plugin.audio.lastvk" name="Last.VK" version="0.0.9" provider-name="HAL9000">
   <requires>
     <import addon="xbmc.python" version="2.0"/>
     <import addon="script.module.xbmcup" version="0.0.5"/>
