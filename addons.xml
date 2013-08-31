@@ -46,7 +46,7 @@
     <platform>all</platform>
   </extension>
 </addon>
-<addon id="script.module.xbmcup" name="XbmcUp" version="0.0.5" provider-name="HAL9000">
+<addon id="script.module.xbmcup" name="XbmcUp" version="0.0.6" provider-name="HAL9000">
     <requires>
         <import addon="xbmc.python" version="2.0"/>
     </requires>
