@@ -32,10 +32,10 @@
     <platform>all</platform>
   </extension>
 </addon>
-<addon id="plugin.video.visionette" name="Visionette" version="0.0.9" provider-name="HAL9000">
+<addon id="plugin.video.visionette" name="Visionette" version="0.0.10" provider-name="HAL9000">
   <requires>
-    <import addon="xbmc.python" version="2.0"/>
-    <import addon="script.module.xbmcup" version="0.0.3"/>
+    <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="script.module.xbmcup" version="0.0.7"/>
   </requires>
   <extension point="xbmc.python.pluginsource" provides="video" library="default.py">
     <provides>video</provides>
@@ -59,9 +59,9 @@
         <platform>all</platform>
     </extension>
 </addon>
-<addon id="script.module.xbmcup" name="XbmcUp" version="0.0.6" provider-name="HAL9000">
+<addon id="script.module.xbmcup" name="XbmcUp" version="0.0.7" provider-name="HAL9000">
     <requires>
-        <import addon="xbmc.python" version="2.0"/>
+        <import addon="xbmc.python" version="2.1.0"/>
     </requires>
     <extension point="xbmc.python.module" library="lib"/>
     <extension point="xbmc.addon.metadata">
