@@ -68,6 +68,19 @@
         <platform>all</platform>
     </extension>
 </addon>
+<addon id="script.pulsar.ruhunt" name="Ruhunt.Pulsar" version="0.0.1" provider-name="HAL9000">
+    <requires>
+        <import addon="xbmc.python" version="2.12.0"/>
+        <import addon="plugin.video.pulsar" version="0.4.0"/>
+    </requires>
+    <extension point="xbmc.python.script" library="main.py">
+        <provides>executable</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en">Pulsar Ruhunt Provider</summary>
+        <platform>all</platform>
+    </extension>
+</addon>
 
 <addon id="repository.hal9000" name="HAL9000 Add-on Repository" version="1.0.1" provider-name="HAL9000">
     <extension point="xbmc.addon.repository" name="HAL9000 Add-on Repository">
