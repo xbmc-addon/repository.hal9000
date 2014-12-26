@@ -15,6 +15,21 @@
     <platform>all</platform>
   </extension>
 </addon>
+<addon id="plugin.audio.lovifm" name="Lovi.fm" version="0.1.0" provider-name="HAL9000">
+    <requires>
+        <import addon="xbmc.python" version="2.14.0"/>
+        <import addon="script.module.xbmcup" version="0.1.1"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" provides="audio" library="main.py">
+        <provides>audio</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary>Lovi.fm</summary>
+        <description lang="en">Lovi.fm radio for Kodi</description>
+        <description lang="ru">Радио Lovi.fm для Kodi</description>
+        <platform>all</platform>
+    </extension>
+</addon>
 <addon id="plugin.rutracker" name="RuTracker" version="0.17.3" provider-name="HAL9000">
   <requires>
     <import addon="xbmc.python" version="2.14.0"/>
