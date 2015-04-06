@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <addons>
-<addon id="plugin.audio.lastvk" name="Last.VK" version="2.0.2" provider-name="HAL9000">
+<addon id="plugin.audio.lastvk" name="Last.VK" version="3.1.1" provider-name="HAL9000">
   <requires>
-    <import addon="xbmc.python" version="2.1.0"/>
-    <import addon="script.module.xbmcup" version="0.0.7"/>
+    <import addon="xbmc.python" version="2.14.0"/>
+    <import addon="script.module.xbmcup" version="0.1.1"/>
   </requires>
   <extension point="xbmc.python.pluginsource" provides="audio" library="default.py">
     <provides>audio</provides>
@@ -15,7 +15,22 @@
     <platform>all</platform>
   </extension>
 </addon>
-<addon id="plugin.rutracker" name="RuTracker" version="0.18.0" provider-name="HAL9000">
+<addon id="plugin.audio.lovifm" name="Lovi.fm" version="0.1.0" provider-name="HAL9000">
+    <requires>
+        <import addon="xbmc.python" version="2.14.0"/>
+        <import addon="script.module.xbmcup" version="0.1.1"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" provides="audio" library="main.py">
+        <provides>audio</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary>Lovi.fm</summary>
+        <description lang="en">Lovi.fm radio for Kodi</description>
+        <description lang="ru">Радио Lovi.fm для Kodi</description>
+        <platform>all</platform>
+    </extension>
+</addon>
+<addon id="plugin.rutracker" name="RuTracker" version="0.18.1" provider-name="HAL9000">
   <requires>
     <import addon="xbmc.python" version="2.14.0"/>
     <import addon="script.module.delugestream" varsion="0.1.1" />
@@ -32,10 +47,10 @@
     <platform>all</platform>
   </extension>
 </addon>
-<addon id="plugin.video.visionette" name="Visionette" version="0.0.9" provider-name="HAL9000">
+<addon id="plugin.video.visionette" name="Visionette" version="0.2.1" provider-name="HAL9000">
   <requires>
-    <import addon="xbmc.python" version="2.0"/>
-    <import addon="script.module.xbmcup" version="0.0.3"/>
+    <import addon="xbmc.python" version="2.14.0"/>
+    <import addon="script.module.xbmcup" version="0.1.1"/>
   </requires>
   <extension point="xbmc.python.pluginsource" provides="video" library="default.py">
     <provides>video</provides>
@@ -47,9 +62,9 @@
     <platform>all</platform>
   </extension>
 </addon>
-<addon id="script.module.delugestream" name="DelugeStream" version="0.0.2" provider-name="HAL9000">
+<addon id="script.module.delugestream" name="DelugeStream" version="0.1.1" provider-name="HAL9000">
     <requires>
-        <import addon="xbmc.python" version="2.1.0"/>
+        <import addon="xbmc.python" version="2.14.0"/>
     </requires>
     <extension point="xbmc.python.pluginsource" library="index.py">
         <provides>executable</provides>
@@ -59,12 +74,26 @@
         <platform>all</platform>
     </extension>
 </addon>
-<addon id="script.module.xbmcup" name="XbmcUp" version="0.0.7" provider-name="HAL9000">
+<addon id="script.module.xbmcup" name="XbmcUp" version="0.1.1" provider-name="HAL9000">
     <requires>
-        <import addon="xbmc.python" version="2.1.0"/>
+        <import addon="xbmc.python" version="2.14.0"/>
     </requires>
+    <extension library="service.py" point="xbmc.service" start="startup"/>
     <extension point="xbmc.python.module" library="lib"/>
     <extension point="xbmc.addon.metadata">
+        <platform>all</platform>
+    </extension>
+</addon>
+<addon id="script.pulsar.ruhunt" name="Ruhunt.Pulsar" version="0.1.1" provider-name="HAL9000">
+    <requires>
+        <import addon="xbmc.python" version="2.14.0"/>
+        <import addon="plugin.video.pulsar" version="0.4.0"/>
+    </requires>
+    <extension point="xbmc.python.script" library="main.py">
+        <provides>executable</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en">Pulsar Ruhunt Provider</summary>
         <platform>all</platform>
     </extension>
 </addon>
