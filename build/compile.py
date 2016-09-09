@@ -27,12 +27,12 @@ def get_addons():
     addons = []
     for dirname in os.listdir('./repo'):
         if os.path.isdir('./repo/' + dirname):
-            filelist = os.listdir('./repo/' + dirname)
+            filelist = [x for x in os.listdir('./repo/' + dirname) if x.endswith('.zip')]
             if filelist:
                 filelist.sort()
                 filename = './repo/' + dirname + '/' + filelist.pop()
                 z = zipfile.ZipFile(filename, 'r')
-                addons.append( '\n'.join([x for x in z.read(dirname + '/addon.xml').splitlines() if x.find('<?xml') == -1]) )
+                addons.append('\n'.join([x for x in z.read(dirname + '/addon.xml').splitlines() if x.find('<?xml') == -1]))
                 z.close()
                 # for Kodi-17
                 file(filename + '.md5', 'wb').write(hashlib.md5(file(filename, 'rb').read()).hexdigest())
