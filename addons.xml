@@ -47,7 +47,7 @@
     <platform>all</platform>
   </extension>
 </addon>
-<addon id="plugin.video.tvclub" name="TVClub" version="0.1.0" provider-name="HAL9000">
+<addon id="plugin.video.tvclub" name="TVClub" version="0.1.1" provider-name="HAL9000">
     <requires>
         <import addon="xbmc.python" version="2.14.0"/>
         <import addon="script.module.xbmcup" version="0.1.1"/>
@@ -91,7 +91,7 @@
         <platform>all</platform>
     </extension>
 </addon>
-<addon id="script.module.tvclub" name="TVClub API" version="0.1.0" provider-name="HAL9000">
+<addon id="script.module.tvclub" name="TVClub API" version="0.1.1" provider-name="HAL9000">
     <requires>
         <import addon="xbmc.python" version="2.14.0"/>
         <import addon="script.module.requests" version="2.9.1"/>
