@@ -30,12 +30,11 @@
         <platform>all</platform>
     </extension>
 </addon>
-<addon id="plugin.rutracker" name="RuTracker" version="0.20.1" provider-name="HAL9000">
+<addon id="plugin.rutracker" name="RuTracker" version="0.20.0" provider-name="HAL9000">
   <requires>
     <import addon="xbmc.python" version="2.14.0"/>
     <import addon="script.module.delugestream" varsion="0.1.1" />
     <import addon="script.module.torrent.ts" optional="true" />
-    <import addon="script.module.libtorrent" optional="true" />
   </requires>
   <extension point="xbmc.python.pluginsource" provides="video" library="default.py">
     <provides>video</provides>
@@ -47,6 +46,23 @@
     <description lang="ru">Навигатор по сайту KinoPoisk и RuTracker с возможностью скачивания торрентов.</description>
     <platform>all</platform>
   </extension>
+</addon>
+<addon id="plugin.video.tvclub" name="TVClub" version="0.3.0" provider-name="HAL9000">
+    <requires>
+        <import addon="xbmc.python" version="2.14.0"/>
+        <import addon="script.module.xbmcup" version="0.2.1"/>
+        <import addon="script.module.tvclub" version="0.3.0"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" provides="video" library="video.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.service" library="service.py" start="login" />
+    <extension point="xbmc.addon.metadata">
+        <summary>TVClub</summary>
+        <description lang="en">Add-on to TVClub service</description>
+        <description lang="ru">Плагин для сервиса TVClub</description>
+        <platform>all</platform>
+    </extension>
 </addon>
 <addon id="plugin.video.visionette" name="Visionette" version="0.2.3" provider-name="HAL9000">
   <requires>
@@ -72,6 +88,19 @@
     </extension>
     <extension point="xbmc.python.module" library="lib"/>
     <extension point="xbmc.addon.metadata">
+        <platform>all</platform>
+    </extension>
+</addon>
+<addon id="script.module.tvclub" name="TVClub API" version="0.3.0" provider-name="HAL9000">
+    <requires>
+        <import addon="xbmc.python" version="2.14.0"/>
+        <import addon="script.module.requests" version="2.9.1"/>
+    </requires>
+    <extension point="xbmc.python.module" library="lib"/>
+    <extension point="xbmc.addon.metadata">
+        <summary>TVClub API</summary>
+        <description lang="en">API to TVClub service</description>
+        <description lang="ru">API для сервиса TVClub</description>
         <platform>all</platform>
     </extension>
 </addon>
