@@ -30,11 +30,12 @@
         <platform>all</platform>
     </extension>
 </addon>
-<addon id="plugin.rutracker" name="RuTracker" version="0.20.0" provider-name="HAL9000">
+<addon id="plugin.rutracker" name="RuTracker" version="0.20.2" provider-name="HAL9000">
   <requires>
     <import addon="xbmc.python" version="2.14.0"/>
     <import addon="script.module.delugestream" varsion="0.1.1" />
     <import addon="script.module.torrent.ts" optional="true" />
+    <import addon="script.module.libtorrent" optional="true" />
   </requires>
   <extension point="xbmc.python.pluginsource" provides="video" library="default.py">
     <provides>video</provides>
